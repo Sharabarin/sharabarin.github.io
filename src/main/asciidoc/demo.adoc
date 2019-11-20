@@ -1,3 +1,27 @@
+:revealjs_theme: black
+:revealjs_customtheme: white_course.css
+:revealjs_slideNumber:
+:revealjs_history:
+:revealjs_progress:
+:encoding: UTF-8
+:lang: ru
+:doctype: article
+:toclevels: 3
+:imagesdir: images
+:source-highlighter: highlightjs
+:highlightjsdir: highlight
+:icons: font
+:iconfont-remote!:
+:iconfont-name: font-awesome-4.7.0/css/font-awesome
+:revealjs_mouseWheel: true
+:revealjs_center: false
+:revealjs_transition: none
+:revealjs_width: 1600
+:revealjs_height: 900
+
+
+
+
 == Случай из практики: долгий отклик
 
 `resource.json`
@@ -17,7 +41,7 @@
 
 
 == Привет мир - Код ревью
-image::images/codereview.gif[]
+image::codereview.gif[{image-200-width}]
 
 
 == Тут должны быть построчный вывод данных
