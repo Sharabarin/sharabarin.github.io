@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-
-    <groupId>test</groupId>
-    <artifactId>Sharabarin</artifactId>
+    <groupId>ru.curs</groupId>
+    <artifactId>csa-talk</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <name>Slides</name>
-    <description>Stream slides</description>
+    <name>Continuous Static Analysis talk slides</name>
+    <description>KStreams talk slides</description>
+
+    <organization>
+        <name>CURS</name>
+        <url>https://corchestra.ru</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <name>Ivan Ponomarev</name>
+            <email>iponomarev@mail.ru</email>
+        </developer>
+    </developers>
 
     <properties>
         <project.slides.directory>${project.build.directory}/generated-slides</project.slides.directory>
@@ -87,9 +98,8 @@
                         <version>${asciidoctorj.version}</version>
                     </dependency>
                 </dependencies>
-
                 <configuration>
-                    <sourceDocumentName>demo.adoc</sourceDocumentName>
+                    <sourceDocumentName>csa.adoc</sourceDocumentName>
                     <requires>
                         <require>asciidoctor-diagram</require>
                     </requires>
@@ -111,7 +121,7 @@
                             <templateDir>${project.build.directory}/asciidoctor-reveal.js-${asciidoctor-revealjs.version}/templates</templateDir>
                             <sourceHighlighter>coderay</sourceHighlighter>
                             <attributes>
-                                <!-- 
+                                <!--
                                     As we are downloading reveal.js in runtime, it sits in a nonstandard folder `reveal.js-${revealjs.version}`
                                 -->
                                 <revealjsdir>reveal.js-${revealjs.version}</revealjsdir>
