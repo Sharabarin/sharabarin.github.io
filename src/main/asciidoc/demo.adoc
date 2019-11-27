@@ -20,8 +20,6 @@
 :revealjs_height: 900
 
 
-
-
 == Случай из практики: долгий отклик
 
 `resource.json`
@@ -50,3 +48,27 @@ image::codereview.gif[{image-200-width}]
 * 1
 * 2
 * 3
+
+[data-transition="zoom"]
+== Проверка правописания
+
+image::aspell.png[,234,float="right",align="center"]
+
+
+
+| Проверка документации:
+[source,bash]
+----
+for f in $(find . -name '*.adoc'); do \
+   cat $f \| aspell --master=ru \
+   --personal=./dict list; done \
+   \| sort \| uniq
+----
+
+image::legacy.png[,300,float="left"]
+[TIP]
+use our Cuba features
+
+[#goals]
+* dfdf
+
