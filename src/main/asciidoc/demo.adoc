@@ -56,7 +56,7 @@ image::aspell.png[,234,float="right",align="center"]
 
 
 
-| Проверка документации:
+34 fg | Проверка документации:
 [source,bash]
 ----
 for f in $(find . -name '*.adoc'); do \
